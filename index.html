@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML-CSS(ASSIGN-2)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--NAVBAR WITH NABRAND AND LIST-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <!--NAVBAR BRAND-->
+            <nav class="navbrand">
+              <h2>ASHUTOSH SINGH</h2>
+            </nav>
+
+            <!--NAVBAR LISTS-->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="" class="nav-link">HOME</a></li>
+              <li class="nav-item"><a href="" class="nav-link">ABOUT-ME</a></li>
+              <li class="nav-item dropdown">
+                <a
+                  href=""
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >CONTACT-ME</a
+                >
+                <nav class="dropdown-menu">
+                  <a href="" class="dropdown-item">SOCIAL-MEDIA</a>
+                  <a href="" class="dropdown-item">PHONE NUMBER</a>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!--USING CSS GRID FOR PARAGRAPH ABOUT ME AND PHOTO-->
+
+    <div class="main-container">
+      <div class="col1">
+        <p>
+          My Name is
+          <span style="font-weight: bold">Ashutosh Singh Chandel</span>. My
+          native is Faridabad Haryana.I have completed my 10th class from
+          Haryana Board with 82%, after that I have completed my 12th class from
+          CBSE board with 72% completed my Graduation from Rawal institutions
+          with 68%. I am working as Software tester since 2020. Seeking a
+          challenging and rewarding career in Computer Technology where I can
+          contribute my knowledge and skills for growth of organization and gain
+          the professional experience for betterment of my future.
+        </p>
+      </div>
+      <div class="col2">
+        <img
+          src="/EDUONIX-PROJECT/HTMLCSS-ASSIGNMENT/MicrosoftTeams-image (1).png"
+        />
+      </div>
+    </div>
+
+    <!--Using Bootstrap classes to create three cards in three grids with modal.-->
+    <div class="container">
+      <div class="row" id="cardRow">
+        <!--First Card-->
+        <div class="col-md-3 card">
+          <div class="card-body">
+            <h5 class="card-title">Holistic Student AdministrationSystem</h5>
+            <p class="card-text">
+              It is a Web based application aimed towards improving student's
+              data management for monitoring student's performance and display
+              module-wise marks.
+            </p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">More Details..</button>
+            <div class="modal fade" id="modal1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"></h5>Holistic Student AdministrationSystem</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    It is a Web based application aimed towards improving student's data management for monitoring student's performance and display module-wise marks.This application is flexible enough to perform multiple operation on multiple student records on a click of a button.With file management, database can be populated by uploading a file and notification feature broadcasts alerts on multiple profiles.Proposed web application is useful for faculty and management to keep track of student progress.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Second-card-->
+        <div class="col-md-3 card" id="column2">
+          <div class="card-body">
+            <h5 class="card-title">
+              <p>Real-Time Twitter Sentiments Using Hadoop</p>
+            </h5>
+            <p class="card-text">
+              In Today's Highly Developed world, every minute, people arround
+              the global express themselves via various platform on the web And
+              in ach minute
+            </p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">More Details..</button>
+            <div class="modal fade" id="modal1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"></h5>Real-Time Twitter Sentiments Using Hadoop</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    In Today's Highly Developed world, every minute, people arround the global express themselves via various platform on the web And in ach minute, A huge amount of data is genrated. The data is in the form of text.Such data is termed as Big-Data. Here We propose to analyse the Sentiments of twitter users through tweets in order to extract what they think. KEYWORDS: Opinion-Mining,Sentiment-Analysis,Hadoop-Cluster,Twitter,Unstructured-data.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Third Card-->
+        <div class="col-md-3 card" id="column2">
+          <div class="card-body">
+            <h5 class="card-title">Scintific Calculator using Java</h5>
+            <p class="card-text">
+              It is a Web based application aimed towards improving calculation.
+            </p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">More Details..</button>
+            <div class="modal fade" id="modal1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"></h5>Scintific Calculator using Java</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    It is a Web based application aimed towards improving calculation. Unlike basic calculators that can only handle smaller values, a scientific calculator can handle numbers on a much vaster scale, which can be useful when it comes to collecting data or working as a physicist or chemist. It can also calculate negative scientific notation.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--ORDERED AND UNORDERED SKILLS LIST-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>SKILLS</h4>
+        </div>
+        <div class="row" style="border: 5px solid grey; border-radius: 8px;">
+          <div class="col-md-3" style="padding-top: 30px;">
+            <ol style="text-align: center;"><li style="font-weight:bolder;">Professional Skills :</li></ol>
+          </div>
+          <div class="col-md-3" style="padding-top: 30px;">
+            <ul>
+              <li>Manual-Testing</li>
+              <li>Automation-Testing</li>
+              <li>Performance-Testing</li>
+              <li>SELENIUM</li>
+              <li>JMETER</li>
+              <li>JAVA</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>BOOTSTRAP</li>
+            </ul>
+          </div>
+        <div class="col-md-3" style="padding-top: 30px;">
+          <ol style="text-align: center;"><li style="font-weight:bolder;">Non-Professional Skills : </li></ol>
+        </div>
+        <div class="col-md-3" style="padding-top: 30px;">
+          <ul>
+            <li>Communication</li>
+            <li>Leadership</li>
+            <li>Coperative</li>
+            <li>Creativity</li>
+            <li>Time-Management</li>
+            <li>Adaptibility</li>
+            <li>Enthusiasm</li>
+            <li>Story-telling</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!--CREATING FORM AND CONTACT SOCIAL MEDIA LINKS USING BOOTSTRAP-->
+   <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <form class="form-group">
+          <h3>Get Enquiry...</h3>
+          <div class="container" id="formContainer">
+           <input type="text" class="form-control" placeholder="FirstName" style="margin-top: 30px;"/>
+           <input type="text" class="form-control" placeholder="lastName" style="margin-top: 30px;"/>
+           <input type="email" class="form-control" placeholder="email@gmail.com" style="margin-top: 30px;"/>
+           <small class="form text-muted" style="margin-top: 30px;"">we will not share with someone..</small>
+           <span class="input-group-prepend input-group-text" style="width: 3em; height: 2em; margin-top: 30px;">+91
+           <input type="number" class="form-control" style="width: 40em; margin-left:30px;"/></span>
+           <span class="text-muted">Please ensure number has only 10 digits.</span>
+           <button class="btn btn-success" style="margin-top: 30px; margin-left: 100px;">Submit</button>
+          </div>
+          </form>
+      </div>
+
+      <div class="col-md-6" style="margin-top: 25px; text-align: right;">
+        <h3>Social-Media Connect</h3>
+        <div class="row">
+          <h6 id="sml1">@email : <span style="color: Orangered;">Singhashu772@gmail.com</span></h6>
+        </div>
+        <div class="row">
+          <h6 id="sml12">@LINKEDIN : <span style="color: Orangered;">ashutosh.singh1900@gmail.com</span></h6>
+        </div>
+        <div class="row">
+          <h6 id="sml13">@GITHUB : <span style="color: Orangered;">https://github.com/ashu5480/EDUONIX-ASSIGNMENTS</span></h6>
+        </div>
+      </div>
+    </div>
+   </div>
+     
+   <!--Footer-->
+   <div class="container">
+     <div class="row">
+      <footer><u>Made By Ashutosh Singh..</u></footer>
+     </div>
+   </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
